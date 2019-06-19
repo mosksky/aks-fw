@@ -20,3 +20,5 @@ kubectl config current-context                 #to see the current cluster
 kubectl config get-contexts                    #to see the lists of the clusters
 kubectl config use-context csvision-askcluster #to switch to the cluster in interest
 
+========== Delete Cluster
+az aks delete --resource-group acscontainer --name myAKSCluster --no-wait
