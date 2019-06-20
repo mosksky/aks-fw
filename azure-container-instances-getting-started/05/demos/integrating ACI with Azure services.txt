@@ -1,0 +1,21 @@
+Overview
+========
+http://markheath.net/post/aci-integration-ideas
+
+Integrating with Azure Functions
+================================
+https://brianpeek.com/build-2018-gamedev-goodness
+https://channel9.msdn.com/Events/Build/2018/THR3512
+https://github.com/dgkanatsios/AzureContainerInstancesManagement
+
+Integrating with Azure Logic Apps
+=================================
+https://lnx.azurewebsites.net/serverless-2-azure-logic-apps-and-azure-container-instances/
+https://github.com/Azure-Samples/aci-logicapps-integration
+
+Integrating with Kubernetes / AKS
+=================================
+https://github.com/virtual-kubelet/virtual-kubelet/tree/master/providers/azure
+https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-install-connector
+https://github.com/Azure-Samples/virtual-kubelet-aci-burst
+https://azure.microsoft.com/en-us/resources/videos/azure-friday-virtual-kubelet-introduction/
