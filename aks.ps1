@@ -25,3 +25,7 @@ kubectl config --help
 
 ========== Delete Cluster
 az aks delete --resource-group acscontainer --name myAKSCluster --no-wait
+
+##### DevOps Variables  
+https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml
+
