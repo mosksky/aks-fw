@@ -20,7 +20,20 @@ kubectl config current-context                 #to see the current cluster
 kubectl config get-contexts                    #to see the lists of the clusters
 kubectl config use-context csvision-askcluster #to switch to the cluster in interest
 
+#### Deployments
+#### to deploy
+kubectl create -f .\tutum-deployment.yaml
+kubectl create -f .\nodejs-app-deployment.yaml
 kubectl get deployments
+kubectl get pods
+kubectl get services
+kubectl describe service tutum-helloworld-service
+kubectl delete service nodejs-app-service
+
+### AKS Deploy pipeline
+kubectl config view --raw
+kubectl get deployments
+kubectl delete deployment tutum-helloworld-deployment
 kubectl config --help
 
 ========== Delete Cluster
