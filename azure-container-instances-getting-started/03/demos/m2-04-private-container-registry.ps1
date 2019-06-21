@@ -1,10 +1,10 @@
 # create a resource group to use
-$resourceGroup = "AciPrivateRegistryDemo"
-$location = "westeurope"
-az group create -n $resourceGroup -l $location
+$resourceGroup = "000-MS-POC-RG-WESTUS"
+$location = "westus"
+#az group create -n $resourceGroup -l $location
 
 # create an Azure Container Registry
-$acrName = "mheathacr"
+$acrName = "lenvolkacr"
 az acr create -g $resourceGroup -n $acrName `
     --sku Basic --admin-enabled true
 

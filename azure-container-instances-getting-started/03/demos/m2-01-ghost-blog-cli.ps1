@@ -1,12 +1,12 @@
 
 # before you begin - make sure you're logged in to the azure CLI
-az login
+az login --service-principal -u %TF_VAR_client_id% -p %TF_VAR_client_secret% -t %TF_VAR_tenant_id%
 # ensure you choose the correct azure subscription if you have more than one 
-az account set -s AzIntConsumption
+az account set -s SEC-POLICY-POC
 
 # create a resource group
-$resourceGroup = "AciGhostDemo"
-$location = "westeurope"
+$resourceGroup = "000-MS-POC-RG-WESTUS"
+$location = "westus"
 az group create -n $resourceGroup -l $location
 
 Function Get-RandomString($length)
@@ -48,3 +48,4 @@ az container logs `
 
 # delete the resource group including the container group
 az group delete -n $resourceGroup -y --no-wait
+#az group deployment create --mode complete --template-file C:\Terraform\AKS-FW\removeall.json --resource-group $resourceGroup

@@ -1,7 +1,7 @@
 # create a resource group
-$resourceGroup = "AciWindowsDemo"
-$location = "westeurope"
-az group create -n $resourceGroup -l $location
+$resourceGroup = "000-MS-POC-RG-WESTUS"
+$location = "westus"
+#az group create -n $resourceGroup -l $location
 
 Function Get-RandomString($length)
 {
@@ -18,7 +18,10 @@ az container create -g $resourceGroup -n $containerGroupName `
     --os-type windows `
     --memory 2 --cpu 2 `
     --restart-policy OnFailure
-
+   
+az container show `
+    -g $resourceGroup -n $containerGroupName
+    
 # get its domain name:
 $fqdn = az container show -g $resourceGroup -n $containerGroupName --query ipAddress.fqdn -o tsv
 

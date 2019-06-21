@@ -8,8 +8,8 @@
 # Set-AzureRmContext -SubscriptionName
 
 # create a resource group
-$resourceGroup = "AciGhostDemo2"
-$location = "westeurope"
+$resourceGroup = "000-MS-POC-RG-WESTUS"
+$location = "westus"
 New-AzureRmResourceGroup -Name $resourceGroup -Location $location
 
 # create the container
